@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+
+<?php
+
+$autoloaders = array(
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php'
+);
+foreach ($autoloaders as $loader) {
+    if (file_exists($loader)) {
+        require $loader;
+        break;
+    }
+}
+
+use JamesHalsall\MagentoSiteChecker\Command\SiteCheckerCommand;
+use JamesHalsall\MagentoSiteChecker\SiteChecker;
+use Symfony\Component\Console\Application;
+
+$application = new Application('Magento Site Checker', SiteChecker::VERSION);
+$application->add(new SiteCheckerCommand());
+$application->run();
