@@ -16,7 +16,6 @@ use JamesHalsall\MagentoSiteChecker\Model\Site;
  */
 class SiteChecker
 {
-    const VERSION = '0.1-dev';
     const API_ENDPOINT = 'https://magento.com/security-patch-check';
 
     /**

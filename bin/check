@@ -12,10 +12,9 @@ foreach ($autoloaders as $loader) {
     }
 }
 
+use JamesHalsall\MagentoSiteChecker\Application\MagentoSiteCheckerApplication;
 use JamesHalsall\MagentoSiteChecker\Command\SiteCheckerCommand;
 use JamesHalsall\MagentoSiteChecker\SiteChecker;
-use Symfony\Component\Console\Application;
 
-$application = new Application('Magento Site Checker', SiteChecker::VERSION);
-$application->add(new SiteCheckerCommand());
+$application = new MagentoSiteCheckerApplication();
 $application->run();
