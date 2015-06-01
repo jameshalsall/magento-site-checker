@@ -39,7 +39,6 @@ class SiteCheckerCommand extends Command
             ->setName('run')
             ->setDescription('Runs the site checker and gives feedback based on various options')
             ->addArgument('sites-config', InputArgument::REQUIRED, 'The path to the YAML file containing the sites that need checking')
-            ->addOption('email', 'e', InputOption::VALUE_OPTIONAL, 'An email address where output will be sent')
             ->addOption('failures-only', 'f', InputOption::VALUE_NONE, 'If failures-only is specified then only failure messages will be displayed')
         ;
     }
@@ -55,7 +54,6 @@ class SiteCheckerCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $this->failuresOnly = $input->getOption('failures-only');
-        $emailAddress = $input->getOption('email');
         $sitesConfigPath = $input->getArgument('sites-config');
 
 
