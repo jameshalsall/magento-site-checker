@@ -6,7 +6,7 @@ use JamesHalsall\MagentoSiteChecker\Model\Site;
 use Symfony\Component\Yaml\Yaml;
 
 /**
- * Converst YAML file contents to an array of site objects.
+ * Converts YAML file contents to an array of site objects.
  *
  * @package JamesHalsall\MagentoSiteChecker\Converter
  * @author  James Halsall <james.t.halsall@googlemail.com>

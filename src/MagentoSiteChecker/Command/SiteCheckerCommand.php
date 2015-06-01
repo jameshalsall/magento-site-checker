@@ -46,7 +46,7 @@ class SiteCheckerCommand extends Command
     /**
      * Executes the command
      *
-     * @param InputInterface $input   An input stream
+     * @param InputInterface  $input  An input stream
      * @param OutputInterface $output An output stream
      *
      * @return integer
@@ -55,7 +55,6 @@ class SiteCheckerCommand extends Command
     {
         $this->failuresOnly = $input->getOption('failures-only');
         $sitesConfigPath = $input->getArgument('sites-config');
-
 
         if (!is_readable($sitesConfigPath)) {
             throw new \RuntimeException(
