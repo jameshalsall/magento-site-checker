@@ -6,7 +6,7 @@ namespace JamesHalsall\MagentoSiteChecker\Model;
  * Site model.
  *
  * @package JamesHalsall\MagentoSiteChecker\Model
- * @author  James Halsall <james@rippleffect.com>
+ * @author  James Halsall <james.t.halsall@googlemail.com>
  */
 class Site
 {
