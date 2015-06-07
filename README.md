@@ -25,6 +25,16 @@ of this README for more information)
 5. Schedule the site checker to run on a cron job and use the `--failures-only` option so you only get cron output for
 failing sites. Using something like `mutt` can facilitate in emailing the output.
 
+## Configuration
+
+The `sites.yml` configuration file represents each of your Magento stores that are to be checked during execution of the
+tool. An example of the file can be seen in the `config/sites.yml.dist` file in this repository. The key for each entry
+in the file should be the name of the site, and each entry supports the following properties:
+
+1. **domain** - the domain name of the site (without the protocol)
+2. **admin_path** - the path to the admin login screen on the site, which will usually be `admin` (optional, defaults to `admin`)
+3. **https** - either `true` or `false` to indicate whether the site is available over SSL (optional, defaults to `false`)
+
 ## Roadmap
 
 1. Add native email support
