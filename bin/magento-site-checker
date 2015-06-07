@@ -13,8 +13,6 @@ foreach ($autoloaders as $loader) {
 }
 
 use JamesHalsall\MagentoSiteChecker\Application\MagentoSiteCheckerApplication;
-use JamesHalsall\MagentoSiteChecker\Command\SiteCheckerCommand;
-use JamesHalsall\MagentoSiteChecker\SiteChecker;
 
 $application = new MagentoSiteCheckerApplication();
 $application->run();
