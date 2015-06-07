@@ -1,0 +1,25 @@
+{
+    "name": "jameshalsall/magento-site-checker",
+    "description": "Checks your Magento sites and lets you know if they need patching",
+    "require": {
+        "symfony/console": "~2.7",
+        "symfony/yaml": "~2.7",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "JamesHalsall\\MagentoSiteChecker\\": "src/MagentoSiteChecker"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Halsall",
+            "email": "james.t.halsall@googlemail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

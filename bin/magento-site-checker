@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+$autoloaders = array(
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php'
+);
+foreach ($autoloaders as $loader) {
+    if (file_exists($loader)) {
+        require $loader;
+        break;
+    }
+}
+
+use JamesHalsall\MagentoSiteChecker\Application\MagentoSiteCheckerApplication;
+
+$application = new MagentoSiteCheckerApplication();
+$application->run();

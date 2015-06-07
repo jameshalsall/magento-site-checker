@@ -1,0 +1,8 @@
+site1:
+    domain: sitename.com
+    admin_path: deep/path/to/admin
+
+site2:
+    domain: sitename2.com
+    admin_path: admin
+    https: true
