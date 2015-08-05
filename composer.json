@@ -21,5 +21,6 @@
             "email": "james.t.halsall@googlemail.com"
         }
     ],
+    "bin": ["bin/magento-site-checker"],
     "minimum-stability": "stable"
 }
